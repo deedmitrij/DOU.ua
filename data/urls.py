@@ -1,0 +1,1 @@
+urls = 'https://dou.ua/'
