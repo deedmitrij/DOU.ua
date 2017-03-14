@@ -1,1 +1,1 @@
-urls = 'https://dou.ua/'
+url = 'https://dou.ua/'

@@ -26,7 +26,8 @@ class JobSearchPage(BasePage):
         self.job_find_button = browser.find_element_by_xpath('//input[@class="btn-search"]').click()
         self.job_header = browser.find_element_by_xpath('//div[@class="b-inner-page-header"]').text
         self.job_header_digits = self.job_header.split(' ')
-        assert self.job_header_digits[0].isdigit() == True
+		job_header_digits = job_header.split(' ')
+        assert job_header_digits[0].isdigit() == True
 
 class TestEvent():
 

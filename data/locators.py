@@ -15,7 +15,6 @@ class JobSearchPage_locators():
     job_checkbox = '//input[@type="checkbox" and contains (@name, "descr")]'
     job_find_button = '//input[@class="btn-search"]'
     job_header = '//div[@class="b-inner-page-header"]'
-    job_header_digits = job_header.split(' ')
 
 class SalariesPage_locators():
     salaries = '//a[contains(text(), "Зарплаты")]'
