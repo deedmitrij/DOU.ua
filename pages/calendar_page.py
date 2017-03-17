@@ -38,4 +38,4 @@ class CalendarPage(Page):
         self.element_click(self._event_send_button_locator)
 
     def check_message(self):
-        return self._event_check_message in self.driver.page_source
+        return self._event_check_message in self.driver.page_source/
