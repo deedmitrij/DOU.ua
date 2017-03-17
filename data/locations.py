@@ -2,4 +2,4 @@ locations = [
     'Kyiv',
 	'Lviv',
 	'Odesa'
-]/
+]
