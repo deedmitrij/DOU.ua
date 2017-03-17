@@ -17,3 +17,4 @@ class SalariesPage():
     def choose_specialization(self):
         self.element_click(self._salaries_specialization_locator)
 
+sd
