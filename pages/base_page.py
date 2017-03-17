@@ -29,8 +29,4 @@ class Page(): #Base class for all Pages
         return self.driver.find_element(*locator).click()
 
     def element_clear(self, locator):
-        return self.driver.find_element(*locator).clear()
-
-
-
-
+        return self.driver.find_element(*locator).clear()/
