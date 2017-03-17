@@ -14,6 +14,4 @@ class Header(Page):
         self.element_click(self._jobs_search_menu_locator)
 
     def click_salaries_menu(self):
-        self.element_click(self._jobs_search_menu_locator)
-
-
+        self.element_click(self._jobs_search_menu_locator)/
