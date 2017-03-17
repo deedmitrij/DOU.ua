@@ -14,22 +14,22 @@ class CalendarPage(Page):
     def click_add_event_button(self):
         self.element_click(self._add_event_locator)
 
-    def fill_in_title(self):
+    def fill_in_title(self, title):
         self.element_click(self._event_title_locator)
         self.element_clear(self._event_title_locator)
-        self.element_send_keys(self._event_location_locator, title)
+        self.element_send_keys(self._event_title_locator, title)
 
-    def fill_in_price(self):
+    def fill_in_price(self, price):
         self.element_click(self._event_price_locator)
         self.element_clear(self._event_price_locator)
         self.element_send_keys(self._event_price_locator, price)
 
-    def choose_location(self):
+    def fill_in_location(self, location):
         self.element_click(self._event_location_locator)
         self.element_clear(self._event_location_locator)
         self.element_send_keys(self._event_location_locator, location)
 
-    def fill_in_description(self):
+    def fill_in_description(self, description):
         self.element_click(self._event_description_locator)
         self.element_clear(self._event_description_locator)
         self.element_send_keys(self._event_description_locator, description)
@@ -38,4 +38,4 @@ class CalendarPage(Page):
         self.element_click(self._event_send_button_locator)
 
     def check_message(self):
-        return self._event_check_message in driver.page_source
+        return self._event_check_message in self.driver.page_source
