@@ -26,4 +26,4 @@ class JobSearchPage(Page):
     def check_header_contains_digits(self):
         job_header_digits = self._job_header_locator.text
         job_header_digits.split(' ')
-        job_header_digits[0].isdigit()/
+        job_header_digits[0].isdigit()
