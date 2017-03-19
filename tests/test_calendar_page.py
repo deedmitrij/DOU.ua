@@ -3,7 +3,7 @@ import pytest
 from selenium import webdriver
 from pages.home_page import Header
 from pages.calendar_page import CalendarPage
-from steps.steps import *
+from steps.steps import fill_in_calendar_form
 from data.titles import title
 from data.descriptions import description
 from data.locations import locations
@@ -30,4 +30,4 @@ class TestEventCreated():
         calendar_page.click_add_event_button()
         fill_in_calendar_form(calendar_page, price, 'TEST EVENT CREATED', location, 'HELLO ADMIN')
         calendar_page.click_send_button()
-        assert calendar_page.check_message() == True
+        assert calendar_page.check_result_message() == True
