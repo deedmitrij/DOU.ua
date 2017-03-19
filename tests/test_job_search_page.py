@@ -3,10 +3,9 @@ import pytest
 from selenium import webdriver
 from pages.home_page import Header
 from pages.job_search_page import JobSearchPage
-from steps.steps import *
+from steps.steps import fill_in_job_search_form
 from data.job_search_positions import positions
 from data.urls import url
-
 from data.locations import locations
 
 class TestJobHeader():
