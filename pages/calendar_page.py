@@ -37,5 +37,5 @@ class CalendarPage(Page):
     def click_send_button(self):
         self.element_click(self._event_send_button_locator)
 
-    def check_message(self):
+    def check_result_message(self):
         return self._event_check_message in self.driver.page_source
