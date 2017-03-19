@@ -1,7 +1,7 @@
 from pages.base_page import Page
 from selenium.webdriver.common.by import By
 
-class SalariesPage():
+class SalariesPage(Page):
 
     _salaries_city_locator = (By.XPATH, '//select[@name="city"]/option[@value="all"]')
     _salaries_position_locator = (By.XPATH, '//select[@name="title"]/optgroup[@label="QA"]/option[contains(text(), "Junior QA engineer")]')
