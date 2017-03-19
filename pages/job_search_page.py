@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 
 class JobSearchPage(Page):
 
-    _job_qa_locator = (By.XPATH, '//select[@name="category"]/option[@value="%s"]')
+    _job_qa_locator = (By.XPATH, '//select[@name="category"]/option[@value="QA"]')
     _job_city_locator = (By.XPATH, '//input[@name="search"]')
     _job_checkbox_locator = (By.XPATH, '//input[@type="checkbox" and contains (@name, "descr")]')
     _job_find_button_locator = (By.XPATH, '//input[@class="btn-search"]')
